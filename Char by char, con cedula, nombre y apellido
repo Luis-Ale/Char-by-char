@@ -1,0 +1,63 @@
+static string func_name(){
+            char[] lista = new char[48];
+            for(int x=0;;){
+                char capt = Console.ReadKey(true).KeyChar;
+                if(capt >= 65 && capt<=90 || capt>=97 && capt<=122){
+                    lista[x] = capt;
+                    x++;
+                    Console.Write(capt);
+                }
+                else if(capt == 13){
+                    lista[x] = '\0';
+                    Console.Write("\n");
+                    break;
+                }
+                else if(capt == 8 && x>=1){
+                    Console.Write("\b \b");
+
+                }
+            }
+            return new string(lista);
+        }
+        static string func_edad(){
+            char[] lista = new char[48];
+            for(int x=0;;){
+                char capt = Console.ReadKey(true).KeyChar;
+                if(capt >= 48 && capt<=57){
+                    lista[x] = capt;
+                    x++;
+                    Console.Write(capt);
+                }
+                else if(capt == 13){
+                    lista[x] = '\0';
+                    Console.Write("\n");
+                    break;
+                }
+                else if(capt == 8 && x>=1){
+                    Console.Write("\b \b");
+
+                }
+            }
+            return new string(lista);
+        }
+        static string func_cedula(){
+            char[] lista = new char[48];
+            for(int x=0;;){
+                char capt = Console.ReadKey(true).KeyChar;
+                if(capt >= 48 && capt<=57 || capt == 45){
+                    lista[x] = capt;
+                    x++;
+                    Console.Write(capt);
+                }
+                else if(capt == 13){
+                    lista[x] = '\0';
+                    Console.Write("\n");
+                    break;
+                }
+                else if(capt == 8 && x>=1){
+                    Console.Write("\b \b");
+
+                }
+            }
+            return new string(lista);
+        }
